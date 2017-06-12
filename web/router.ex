@@ -20,7 +20,9 @@ defmodule JwMinistryApi.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", JwMinistryApi do
-  #   pipe_through :api
-  # end
+   scope "/api", JwMinistryApi do
+     pipe_through :api
+
+     resources "/territories", TerritoryController, except: [:new, :edit]
+   end
 end
