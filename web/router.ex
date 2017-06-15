@@ -24,5 +24,6 @@ defmodule JwMinistryApi.Router do
      pipe_through :api
 
      resources "/territories", TerritoryController, except: [:new, :edit]
+     resources "/publishers", PublisherController, except: [:new, :edit]
    end
 end
