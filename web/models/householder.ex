@@ -13,6 +13,7 @@ defmodule JwMinistryApi.Householder do
     field :province, :string
     field :date_visited, Ecto.Date
     belongs_to :territory, JwMinistryApi.Territory
+    has_many :visit, JwMinistryApi.Visit
 
     timestamps()
   end
