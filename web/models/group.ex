@@ -3,6 +3,7 @@ defmodule JwMinistryApi.Group do
 
   schema "groups" do
     field :name, :string
+    has_many :publisher, JwMinistryApi.Publisher
     belongs_to :group_overseer, JwMinistryApi.GroupOverseer
     belongs_to :congregation, JwMinistryApi.Congregation
 
