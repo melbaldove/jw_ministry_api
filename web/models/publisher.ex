@@ -5,7 +5,7 @@ defmodule JwMinistryApi.Publisher do
     field :first_name, :string
     field :last_name, :string
     belongs_to :role, JwMinistryApi.Role
-
+    has_one :congregation, JwMinistryApi.Congregation
     timestamps()
   end
 

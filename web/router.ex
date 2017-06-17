@@ -25,5 +25,6 @@ defmodule JwMinistryApi.Router do
 
      resources "/territories", TerritoryController, except: [:new, :edit]
      resources "/publishers", PublisherController, except: [:new, :edit]
+     resources "/congregations", CongregationController, except: [:new, :edit]
    end
 end
