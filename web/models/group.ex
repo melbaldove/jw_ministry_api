@@ -1,10 +1,10 @@
-defmodule JwMinistryApi.Congregation do
+defmodule JwMinistryApi.Group do
   use JwMinistryApi.Web, :model
 
-  schema "congregations" do
+  schema "groups" do
     field :name, :string
-    belongs_to :coordinator, JwMinistryApi.Coordinator
-    has_many :group, JwMinistryApi.Group
+    belongs_to :group_overseer, JwMinistryApi.GroupOverseer
+    belongs_to :congregation, JwMinistryApi.Congregation
 
     timestamps()
   end
