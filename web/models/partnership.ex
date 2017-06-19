@@ -13,7 +13,7 @@ defmodule JwMinistryApi.Partnership do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:publisher, :visit])
-    |> validate_required([:publisher, :visit])
+    |> cast(params, [])
+    |> validate_required([])
   end
 end
