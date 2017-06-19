@@ -7,7 +7,7 @@ defmodule JwMinistryApi.Publisher do
     belongs_to :role, JwMinistryApi.Role
     belongs_to :group, JwMinistryApi.Group
     has_one :congregation, JwMinistryApi.Congregation
-    has_one :group, JwMinistryApi.Group
+    has_one :group_overseer, JwMinistryApi.Group
     many_to_many :visits, JwMinistryApi.Visit, join_through: JwMinistryApi.Partnership
 
     timestamps()
