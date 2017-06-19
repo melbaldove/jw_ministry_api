@@ -4,7 +4,7 @@ defmodule JwMinistryApi.Congregation do
   schema "congregations" do
     field :name, :string
     belongs_to :coordinator, JwMinistryApi.Coordinator
-    has_many :group, JwMinistryApi.Group
+    has_many :groups, JwMinistryApi.Group
 
     timestamps()
   end

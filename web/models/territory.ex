@@ -5,7 +5,7 @@ defmodule JwMinistryApi.Territory do
     field :barangay, :string
     field :city, :string
     field :province, :string
-    has_many :householder, JwMinistryApi.Householder
+    has_many :householders, JwMinistryApi.Householder
 
     timestamps()
   end
