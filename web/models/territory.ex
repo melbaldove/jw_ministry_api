@@ -6,6 +6,7 @@ defmodule JwMinistryApi.Territory do
     field :city, :string
     field :province, :string
     has_many :householders, JwMinistryApi.Householder
+    many_to_many :groups, JwMinistryApi.Group, join_through: JwMinistryApi.GroupTerritory
 
     timestamps()
   end

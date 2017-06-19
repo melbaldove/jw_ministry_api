@@ -6,6 +6,7 @@ defmodule JwMinistryApi.Visit do
     field :comment, :string
     field :date_visited, Ecto.Date
     belongs_to :householder, JwMinistryApi.Householder
+    many_to_many :publishers, JwMinistryApi.Publisher, join_through: JwMinistryApi.Partnership
 
     timestamps()
   end
