@@ -6,6 +6,7 @@ defmodule JwMinistryApi.Group do
     has_many :publisher, JwMinistryApi.Publisher
     belongs_to :group_overseer, JwMinistryApi.GroupOverseer
     belongs_to :congregation, JwMinistryApi.Congregation
+    many_to_many :territories, JwMinistryApi.Territory, join_through: JwMinistryApi.GroupTerritory
 
     timestamps()
   end
